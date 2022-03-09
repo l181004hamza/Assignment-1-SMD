@@ -27,8 +27,3 @@ class Technician(techType: String="NULL",
         return "Tech $empid installed system $system"
     }
 }
-
-fun main()
-{
-    var tech = Technician("Lab Tech", 10, "ali","adressA1", 98766778, "Technician", "Emp12", "Tch",  )
-}

@@ -11,7 +11,7 @@ open class Student(
     year: Int=0,
     semester: Int=0,
     college: String=" ",
-    grade: Int=0)
+    grade: Double=0.0)
     :Person(adharid1,name1,address1,phone1,profession1)
 {
     var sid1: Int
@@ -19,7 +19,7 @@ open class Student(
     var year1: Int
     var semester1: Int
     var college1: String
-    var grade1: Int
+    var grade1: Double
     init
     {
         println("This is polymorphic class Student")
@@ -30,11 +30,11 @@ open class Student(
         semester1=semester
         grade1=grade
     }
-    override fun register(course: Int): String
+    override fun register(course: String): String
     {
         return "Course ID: $course is registered for Student: $sid1"
     }
-    public open fun getgrade(Course: String):Int
+    public open fun getgrade(Course: String):Double
     {
         return grade1
     }
@@ -49,13 +49,3 @@ open class Student(
 
 }
 
-fun main()
-{
-    var S1 = Student(10, "hamza", "address6969", 31216969, "nothing", 181004, "CS", 2018, 5, "Fast", 4)
-    println(S1.register(2011))
-    println(S1.attend("SMD"))
-    println("Grade: ")
-    println(S1.getgrade("SMD"))
-    println(S1.learn())
-
-}

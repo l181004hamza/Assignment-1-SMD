@@ -26,11 +26,6 @@ open class Staff(adharid1: Int,
         empdept=empdept1
         emprole=emprole1
 
-        println(empid)
-        println(empexperience)
-        println(empsalary)
-        println(empdept)
-        println(emprole)
 
     }
     public fun attend(Duty: String):String
@@ -47,10 +42,3 @@ open class Staff(adharid1: Int,
     }
 }
 
-fun main()
-{
-    var Emp = Staff(11, "faez", "adress2", 3217879, "developer", "Emp 69", "VELA",  "0.00", 5000.5)
-    println(Emp.attend("Task1"))
-    println(Emp.getPromotion())
-    println(Emp.getSalary())
-}

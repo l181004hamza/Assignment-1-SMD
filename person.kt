@@ -16,7 +16,7 @@ abstract class Person(var AID: Int=0, var N: String="NULL", var Ad: String="NULL
         this.profession=Prof
     }
 
-    public open fun register(UID: Int): String {
+    public open fun register(UID: String): String {
         return "The Person is Registered: $UID"
     }
     public fun perform(duty: String): String
