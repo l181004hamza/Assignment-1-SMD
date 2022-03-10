@@ -4,7 +4,7 @@ Q1:
 
 Problem: 
 
-I identified that the problem in the question was Diamond Effect because the class all rounder implemented to super classes, bowler and batsman that causes a conflict. 
+I identified that the problem in the question was Diamond Effect because the class all rounder implemented two parent classes, bowler and batsman that causes a conflict. 
 
 Solution: 
 
